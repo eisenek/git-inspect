@@ -2,5 +2,8 @@ doctype hmtl5
 html(lang="pl")
   head
     title = 'Github inspector'
+    link(rel='stylesheet', href='/assets/index.css')
+    script(type='module',src='/assets/app.js')
+
   body
-    h1 hello world
+    repos(data-user='eisenek', data-updated='today')

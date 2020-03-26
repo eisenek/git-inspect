@@ -1,3 +1,4 @@
 import viewsRouter from './views';
+import apiRouter from './api'
 
-export {viewsRouter}
+export {viewsRouter, apiRouter}
