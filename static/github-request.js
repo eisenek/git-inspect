@@ -1,11 +1,10 @@
 
-async function githubRequest({ user, updated }) {
-  const url = `/api/repos/list?user=${user}&updated=${updated}`;
+async function githubRequest({ user, update }) {
+  const url = `/api/repos/list?user=${user}&updated=${update}`;
   try {
     const data = await (await fetch(url)).json();
     return data;
   } catch (err) {
-    alert('Failed fetching data. Try again.');
     return false;
   }
 }

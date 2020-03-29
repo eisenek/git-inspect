@@ -1,5 +1,6 @@
-import * as express from 'express'
+import * as express from 'express';
 import getMainPage from '../controllers/main';
+
 const viewsRouter: express.Router = express.Router();
 
 viewsRouter
